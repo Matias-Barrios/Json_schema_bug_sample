@@ -1,0 +1,33 @@
+{
+	"type" : "object",
+	"properties" : {
+		"name" : {
+			"type" : "string",
+			"pattern" : "^[a-zA-Z]+[ ][a-zA-Z]+$"
+		},
+		"age" : {
+			"type": "number",
+			"minimum": 18,
+			"maximum": 100
+		}
+	},
+	"patternProperties": {
+		"^[A-Z]{4}$": {
+				"type": "object",
+				"patternProperties": {
+					"^some_attribute_which_Ill_force_to_fail$" : {
+						"type" : "string",
+						"pattern" : "^[a-zA-Z_]+$"
+					}
+				},
+                "properties" : {
+                	"some_attribute_as_string" : {
+                    	"pattern" : "^[a-zA-Z_]+$"
+                    }
+                }
+	
+		}
+	
+	},
+	"additionalProperties" : false
+}
