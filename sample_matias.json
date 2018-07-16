@@ -1,8 +1,8 @@
 {
-	"name" : "Matias Barrios",
-	"age" : 31,
+    "name" : "Matias Barrios",
+    "age" : 31,
     "HERE" : {
-		"some_attribute_which_Ill_force_to_fail" : "valid",
+	"some_attribute_which_Ill_force_to_fail" : "valid",
     	"some_attribute_as_string" : "valid"
     }
 }
