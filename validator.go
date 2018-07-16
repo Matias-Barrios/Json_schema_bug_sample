@@ -11,7 +11,7 @@ import (
 	"github.com/xeipuuv/gojsonschema"
 )
 
-const everything_is_ok = "Your spec seems to be valid!"
+const everything_is_ok = "Your file seems to be valid!"
 var default_schema string = "./schemas/matias_schema.json"
 var schemaLoader = gojsonschema.NewStringLoader(load_file(default_schema))
 
